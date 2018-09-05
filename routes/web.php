@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('chat', 'ChatController@chat');
 Route::post('send', 'ChatController@send');
+Route::post('sendBoard', 'BoardController@sendBoard');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

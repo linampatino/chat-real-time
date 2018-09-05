@@ -6,5 +6,9 @@
             <h1>Chat Room</h1>
                 <chat-component></chat-component>
         </div>
+
+        <div class="row">
+            <board-component> </board-component>
+        </div>
     </div>
 @endsection

@@ -11,7 +11,10 @@ window.Vue = require('vue');
 
 import Vue from 'vue'
 import VueChatScroll from 'vue-chat-scroll'
+import VueKonva from 'vue-konva'
+
 Vue.use(VueChatScroll)
+Vue.use(VueKonva)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -22,16 +25,9 @@ Vue.use(VueChatScroll)
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('message-component', require('./components/MessageComponent.vue'));
 Vue.component('chat-component', require('./components/ChatComponent.vue'));
-
+Vue.component('board-component', require('./components/BoardComponent.vue'));
 
 const app = new Vue({
-    el: '#app',
-    
-    /*data:{
-        message: '',
-        chat:{
-            messages: []
-        }
-    },*/
+    el: '#app'
 
 });
